@@ -18,15 +18,6 @@ const getToken = async(lat, lon, limit, clientId) => {
     return data;
 }
 
-cityGeocode('New York', 'NY', 'US', clientId)
-    .then(data => console.log(data));
-
-zipGeocode('90210', 'US', clientId)
-    .then(data => console.log(data));
-
-getToken(40.7128, -74.0060, 1, clientId)
-    .then(data => console.log(data));
-
 const formEl = document.getElementById('weatherForm');
 const locationInput = document.getElementById('locationInput');
 const weatherResult = document.getElementById('weatherResult');
