@@ -1,0 +1,233 @@
+#forecast-holder{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    margin-top: 17vh;
+}
+#forecast{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(95, 95, 95, 0.274);
+    padding: 2vh;
+}
+#weatherResult{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+ul{
+    margin: 1vh;
+    list-style-type: none;
+    font-size: 20px;
+}
+h2{
+    margin: 1vh;
+    margin-top: 3vh;
+}
+.weather-icon{
+    display: block;
+    margin: 0 auto;
+}
+#Thunderstorm-Day{
+    background-image: url("https://media.giphy.com/media/iN6lLmUb8exMI/giphy.gif");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+#Thunderstorm-Night{
+    background-image: url("https://media.giphy.com/media/Tiu4eGIphOldadCOFT/giphy.gif");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+#Clouds-Day{
+    background-image: url("https://media.giphy.com/media/cSjzUyvepoG7K89NTh/giphy.gif");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+#Clouds-Night{
+    background-image: url("https://media.giphy.com/media/DTJkormLjEX7wYzXVl/giphy.gif");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+#Clear-Day{
+
+    background-image: url("https://media.giphy.com/media/ivcVZnZAEqhs4/giphy.gif");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+#Clear-Night{
+    background-image: url("https://media.giphy.com/media/D45mvzFpX4RpPq9NAH/giphy.gif");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+#Snow-Day{
+
+    background-image: url("https://media.giphy.com/media/5Qqew1q54If0iZJ2O4/giphy.gif");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+#Snow-Night{
+    background-image: url("https://media.giphy.com/media/PkaZUCdVm2c5G/giphy.gif");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#Rain-Day{
+    background-image: url("https://media.giphy.com/media/gRnSZSRzOJeG4/giphy.gif");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#Rain-Night{
+    background-image: url("https://media.giphy.com/media/Fzt6LL05lletW/giphy.gif");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+#Drizzle-Day{
+    background-image: url("https://media.giphy.com/media/Mgq7EMQUrhcvC/giphy.gif");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+#Drizzle-Night{
+    background-image: url("https://media.giphy.com/media/l0IrIkq7Q3iRII0hy/giphy.gif");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#Haze-Day{
+    
+    background-image: url("https://media.giphy.com/media/eCqsfF7Fh8dsjgfLWY/giphy.gif");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+#Haze-Night{
+    background-image: url("https://media.giphy.com/media/jTNlemV4KqPqbOFox7/giphy.gif");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#Tornado-Day{  
+    background-image: url("https://media.giphy.com/media/5QXkoDtmD8NGi7MuFP/giphy.gif");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+#Tornado-Night{
+    background-image: url("https://media.giphy.com/media/5QXkoDtmD8NGi7MuFP/giphy.gif");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+#Fog-Day{
+    
+    background-image: url("https://media.giphy.com/media/xT9GEpwYcYtwrqjdQc/giphy.gif");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+#Fog-Night{
+    
+    background-image: url("https://media.giphy.com/media/xT9GEpwYcYtwrqjdQc/giphy.gif");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+#Mist-Day{
+    background-image: url("https://media.giphy.com/media/xUA7b4arnbo3THfzi0/giphy.gif");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+#Mist-Night{
+    
+    background-image: url("https://media.giphy.com/media/yhZr5Wx7CBFbq/giphy.gif");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#Smoke-Day{
+    background-image: url("https://media.giphy.com/media/d47Ixyj0WtKQStag/giphy.gif");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+#Smoke-Night{
+    background-image: url("https://media.giphy.com/media/d47Ixyj0WtKQStag/giphy.gif");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+#Dust-Day{
+    
+    background-image: url("https://media.giphy.com/media/j7wBU7aHcKf7y/giphy.gif");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+#Dust-Night{
+    
+    background-image: url("https://media.giphy.com/media/oFZQ9Nn1XM0fe/giphy.gif");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+#Sand-Day{
+    
+    background-image: url("https://media.giphy.com/media/rJa1pXoPhYjGU/giphy.gif");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#Sand-Night{
+    
+    background-image: url("https://media.giphy.com/media/EaVouuqujYqiI/giphy.gif");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#Ash-Day{
+    background-image: url("https://media.giphy.com/media/4IeFa9XHj18DRFNGll/giphy.gif");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+#Ash-Night{
+    background-image: url("https://media.giphy.com/media/4IeFa9XHj18DRFNGll/giphy.gif");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+#Squall-Day{
+    background-image: url("https://media.giphy.com/media/WqgM24U3XnnobDPhUx/giphy.gif");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+#Squall-Night{
+    
+    background-image: url("https://media.giphy.com/media/WqgM24U3XnnobDPhUx/giphy.gif");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
