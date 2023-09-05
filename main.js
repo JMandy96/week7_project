@@ -35,7 +35,7 @@ formEl.addEventListener('submit', async (event) => {
         const weather = data.weather[0];
         const main = data.main;
         const wind = data.wind;
-        console.log()
+        
 
         const unixTimeOfDay = data.dt
         const milliTimeOfDay = unixTimeOfDay * 1000
