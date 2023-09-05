@@ -38,8 +38,11 @@ formEl.addEventListener('submit', async (event) => {
         
 
         const unixTimeOfDay = data.dt
+        // conver unix time into milliseconds
         const milliTimeOfDay = unixTimeOfDay * 1000
+        // converts the milliseconds into a date format.
         const timeOfDay = new Date(milliTimeOfDay)
+        // tolocaletimestring converts a date into a string of the time.
         const timeString = timeOfDay.toLocaleTimeString()
 
         const unixSunrise = data.sys.sunrise
@@ -53,6 +56,7 @@ formEl.addEventListener('submit', async (event) => {
         const sunsetString = sunset.toLocaleTimeString()
 
         const isDay = () => {
+            //getTime represents time as milliseconds since a specific date so it can compare times.
             const currentTime = new Date().getTime();
             return currentTime >= sunrise.getTime() && currentTime < sunset.getTime();
           };
