@@ -7,7 +7,7 @@ const cityGeocode = async(cityName, stateCode, countryCode, clientId) => {
 }
 
 const zipGeocode = async(zipCode, countryCode, clientId) => {
-    const response = await fetch(`http://api.openweathermap.org/geo/1.0/zip?zip=${zipCode},${countryCode}&appid=${clientId}&units=imperial&unites=imperial`)
+    const response = await fetch(`http://api.openweathermap.org/geo/1.0/zip?zip=${zipCode},${countryCode}&appid=${clientId}&units=imperial&units=imperial`)
     const data = await response.json();
     return data;
 }
