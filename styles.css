@@ -4,6 +4,7 @@
     align-items: center;
     width: 100vw;
     margin-top: 17vh;
+
 }
 #forecast{
     display: flex;
@@ -12,12 +13,21 @@
     align-items: center;
     background-color: rgba(95, 95, 95, 0.274);
     padding: 2vh;
+    border-radius: 3px;
+
 }
 #weatherResult{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
+}
+#locationInput{
+    border-radius: 3px;
+}
+button{
+    border-radius: 3px;
 }
 ul{
     margin: 1vh;
