@@ -1,19 +1,19 @@
 const clientId = '6529d47bf168f78ad779cbf82d7ccccf'
 
 const cityGeocode = async(cityName, stateCode, countryCode, clientId) => {
-    const response = await fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${cityName},${stateCode},${countryCode}&limit=1&appid=${clientId}&units=imperial`)
+    const response = await fetch(`https://api.openweathermap.org/geo/1.0/direct?q=${cityName},${stateCode},${countryCode}&limit=1&appid=${clientId}&units=imperial`)
     const data = await response.json();
     return data;
 }
 
 const zipGeocode = async(zipCode, countryCode, clientId) => {
-    const response = await fetch(`http://api.openweathermap.org/geo/1.0/zip?zip=${zipCode},${countryCode}&appid=${clientId}&units=imperial&units=imperial`)
+    const response = await fetch(`https://api.openweathermap.org/geo/1.0/zip?zip=${zipCode},${countryCode}&appid=${clientId}&units=imperial&units=imperial`)
     const data = await response.json();
     return data;
 }
 
 const getToken = async(lat, lon, limit, clientId) => {
-    const response = await fetch(`http://api.openweathermap.org/geo/1.0/reverse?lat=${lat}&lon=${lon}&limit=${limit}&appid=${clientId}&units=imperial&units=imperial`);
+    const response = await fetch(`https://api.openweathermap.org/geo/1.0/reverse?lat=${lat}&lon=${lon}&limit=${limit}&appid=${clientId}&units=imperial&units=imperial`);
     const data = await response.json();
     return data;
 }
@@ -92,7 +92,7 @@ formEl.addEventListener('submit', async (event) => {
 const weatherData = async (area= 'Washington Township') => {
     let apiUrl = '';
     
-        apiUrl = `http://api.openweathermap.org/data/2.5/weather?q=${area}&appid=${clientId}&units=imperial`;
+        apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${area}&appid=${clientId}&units=imperial`;
 
 
     const response = await fetch(apiUrl);
@@ -167,7 +167,7 @@ const defaultWeather = async () => {
 };
 
 const weatherDataByCoordinates = async (lat, lon) => {
-    const apiUrl = `http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${clientId}&units=imperial`;
+    const apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${clientId}&units=imperial`;
 
     const response = await fetch(apiUrl);
 
