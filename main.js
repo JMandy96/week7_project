@@ -110,8 +110,10 @@ const defaultWeather = async () => {
     
     try {
 
+        const randomLat = Math.random() * (180) - 90; 
+        const randomLon = Math.random() * (360) - 180;
         
-        const data = await weatherData();
+        const data = await weatherDataByCoordinates(randomLat, randomLon);
         const weather = data.weather[0];
         const main = data.main;
         const wind = data.wind;
@@ -141,7 +143,7 @@ const defaultWeather = async () => {
 
         document.body.id = `${weather.main}-${dayorNight}`;
           weatherResult.innerHTML = `
-          <h2> Weather in ${data.name}, ${data.sys.country}<h2>
+          <h2> Weather in ${data.name}, ${data.sys.country} </br>Latitude:${randomLat}</br> Longitude: ${randomLon}<h2>
           <img class="weather-icon" src="https://openweathermap.org/img/wn/${weather.icon}@2x.png" alt="${weather.main} - ${weather.description}">
           <ul>
               <li><strong>Weather:</strong>${weather.main} - ${weather.description}</li>
@@ -162,6 +164,19 @@ const defaultWeather = async () => {
       console.error(error);
       weatherResult.textContent = 'Error fetching weather data';
   }
+};
+
+const weatherDataByCoordinates = async (lat, lon) => {
+    const apiUrl = `http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${clientId}&units=imperial`;
+
+    const response = await fetch(apiUrl);
+
+    if (!response.ok) {
+        throw new Error('Failed to fetch weather data');
+    }
+
+    const data = await response.json();
+    return data;
 };
 
 window.addEventListener('load', defaultWeather)
